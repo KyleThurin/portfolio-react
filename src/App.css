@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Added styling for the navigation container */
+.main-nav {
+  margin-bottom: 40px; /* Space below the navigation links */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+  gap: 10px; /* Spacing between wrapped links/buttons */
+}
