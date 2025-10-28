@@ -1,6 +1,55 @@
 
-h1 {
-    font-family: "Bitcount Grid Single", "Arial Black", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
+/*Fixed viewport dimensions for the crawl */
+.starWarsContainer {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Takes up 70% of the screen height */
+  overflow: hidden; /*Clips the text that scrolls off-screen */
+
+  /*3D viewing perspective */
+  perspective: 800px;
+  margin-top: 50px;
+}
+
+/*Text Styling */
+.crawl h2 {
+  font-size: 3em;
+  line-height: 1.5;
+  color: #ffc400; /* Star Wars classic gold/yellow */
+  text-align: justify; 
+  margin: 0 0 2em 0; /* Space between the h2 elements */
+  
+  /* Apply a text shadow for a faint glow effect */
+  text-shadow: 0 0 10px rgba(255, 196, 0, 0.5);
+}
+
+/*The 3D crawl (scroll) effect */
+.crawl {
+  position: absolute;
+  width: 95%;
+  margin-left: 2.5%;
+  bottom: 0; /* Start the text at the bottom */
+  
+  /*3D rotation to make the text recede */
+  transform: rotateX(20deg) translateZ(0);
+  /* Anchor the rotation to the bottom center */
+  transform-origin: 50% 100%; /* x-offset | y-offset */
+  
+  /* Start the animation */
+  animation: crawl 30s linear infinite; /* Adjust time for speed */
+}
+
+
+/*Defines the scrolling movement */
+@keyframes crawl {
+  0% {
+      /* Start position: bottom */
+      top: 100%;
+      transform: rotateX(20deg) translateZ(0);
   }
+  100% {
+      /* End position: Text has scrolled far into the distance */
+      top: -150%;
+      transform: rotateX(20deg) translateZ(-2500px); 
+  }
+}

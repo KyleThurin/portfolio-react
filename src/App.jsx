@@ -6,10 +6,8 @@ import HomeView from './views/HomeView/HomeView';
 import './App.css'
 
 
-
-// Component to handle the navigation buttons using useNavigate
+// Component to handle the navigation buttons (useNavigate)
 function NavButtons() {
-  //TODO: Use links directly and then style them like buttons in App.css?
 
   return (
     <nav className="main-nav">
@@ -25,6 +23,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <h1>Kyle Thurin's Portfolio Site</h1>
       <NavButtons /> 
       <Routes>
         <Route path='/' element={<HomeView />}/>

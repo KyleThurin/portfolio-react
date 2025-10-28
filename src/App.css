@@ -5,11 +5,51 @@
   text-align: center;
 }
 
-/* Added styling for the navigation container */
+/* Styling for the navigation container */
 .main-nav {
-  margin-bottom: 40px; /* Space below the navigation links */
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
-  gap: 10px; /* Spacing between wrapped links/buttons */
+  flex-wrap: wrap; 
+  gap: 10px; 
 }
+
+h1 {
+  font-family: "Bitcount Grid Single", "Arial Black", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+
+  /* --- ANIMATION STYLES --- */
+  /*Subtle text shadow to enhance the glow/pixel effect */
+  animation: color-pulse 4s infinite alternate; 
+  
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 0 0 5px rgba(100, 108, 255, 0.5);
+  
+  color: #646cff; 
+  /* ---  --- */
+}
+/* --- KEYFRAMES FOR COLOR CYCLING --- */
+@keyframes color-pulse {
+  0% {
+    color: #646cff; /* Base Blue */
+    text-shadow: 0 0 5px #646cff;
+  }
+  25% {
+    color: #a0a7ff; /* Lighter, brighter Blue (Monochromatic) */
+    text-shadow: 0 0 10px #a0a7ff;
+  }
+  50% {
+    color: #646cff; /* Return to Base Blue */
+    text-shadow: 0 0 5px #646cff;
+  }
+  75% {
+    color: #4045c0; /* Darker Blue (Monochromatic) */
+    text-shadow: 0 0 10px #4045c0;
+  }
+  100% {
+    color: #646cff; /* Return to Base Blue */
+    text-shadow: 0 0 5px #646cff;
+  }
+}
+/* --- END KEYFRAMES --- */

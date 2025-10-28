@@ -1,7 +1,7 @@
-.iFrame {
+.iframe {
     width: 100%; 
-    max-width: 800px;
-    height: 600px;
+    max-width: 1200px; /*800px;*/
+    height: 80vh; /*600px;*/
     margin: 20px auto;
     display: block; 
     border: 1px solid #ccc;

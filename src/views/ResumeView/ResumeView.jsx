@@ -6,6 +6,7 @@ export default function ResumeView() {
     return (
         <>
             <h3>Kyle Thurin's Resume:</h3>
+            
             <iframe src={resumePdf} className={styles.iframe} />
 
             <p>
