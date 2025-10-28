@@ -5,5 +5,30 @@
     margin: 20px auto;
     display: block; 
     border: 1px solid #ccc;
+    border-radius: 8px; /*To match the corners of the buttons*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* --- Download button/link --- */
+.downloadButton {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s, background-color 0.25s;
+    color: rgba(255, 255, 255, 0.87); 
+    text-decoration: none;
+    
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.downloadButton:hover {
+    border-color: #646cff;
+    color: #646cff; 
+}
+/* ---            --- */
