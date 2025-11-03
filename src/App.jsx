@@ -31,6 +31,9 @@ function App() {
         <Route path='/projects' element={<ProjectView /> }/>
         <Route path='/resume' element={<ResumeView /> }/>
       </Routes>
+      <footer className="main-footer">
+        &copy; 2025. All rights reserved.
+      </footer>
     </BrowserRouter>
   )
 }

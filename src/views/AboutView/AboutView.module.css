@@ -1,5 +1,4 @@
 .aboutContainer {
-    /* Limit width and center the block for better readability */
     max-width: 800px;
     margin: 40px auto; 
     
@@ -9,26 +8,65 @@
     border-radius: 8px;
     text-align: left; 
 }
-/*Centers the title and adds an accent color */
 .aboutContainer h2 {
     text-align: center; 
-    margin-bottom: 25px;
+    margin-bottom: 10px; /* 25px;*/
     color: #646cff; 
     border-bottom: 2px solid #333; 
     padding-bottom: 10px;
     font-size: 2em;
 }
-/*Line height and soft color added to the object*/
+/* Social links container */
+.socialLinks {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the links before the main text starts */
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+/* Social links  (like buttons) */
+.socialLinks a {
+    border-radius: 8px;
+    border: 1px solid #646cff;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: transparent; 
+    cursor: pointer;
+    transition: border-color 0.25s, background-color 0.25s;
+    color: rgba(255, 255, 255, 0.87); 
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.socialLinks a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    background-color: rgba(100, 108, 255, 0.1);
+    border-color: #646cff; 
+    color: #646cff;  
+}
+
 .aboutContainer p {
-    
     line-height: 1.65; 
     margin-bottom: 20px;
     color: #cccccc;
     font-size: 1.05em;
 }
-/*Make the ***emphasized*** words stand out */
+/*Make the <strong></strong> words stand out */
 .aboutContainer p strong {
-    
     color: #ffffff; 
     font-weight: 700;
+}
+/*Profile image */
+.image {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular shape */
+    margin: 0 auto 30px auto; /* Center image and add spacing below */
+    border: 4px solid #646cff; 
 }
