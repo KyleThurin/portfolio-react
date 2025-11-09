@@ -5,6 +5,11 @@ import AboutView from './views/AboutView/AboutView';
 import HomeView from './views/HomeView/HomeView';
 import './App.css'
 
+//TODO: Add a background, so you do not just have the white. 
+//  -Maybe soften the color palet a bit (lue on black is a bit tough on the eyes)
+
+//TODO: Add a "CONTACT ME" button at the top
+//  -Have an option for people to email you directly or fill out a contact sheet for you to reach them directly
 
 // Component to handle the navigation buttons (useNavigate)
 function NavButtons() {

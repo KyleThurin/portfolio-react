@@ -2,7 +2,6 @@ import photo from '../../assets/linked-in-photo.jpg'
 import styles from './AboutView.module.css'
 
 export default function AboutView() {
-    //TODO: Add a photo
     return (
         <>
             <section className={styles.aboutContainer}>

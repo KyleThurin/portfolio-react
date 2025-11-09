@@ -55,7 +55,7 @@ export default function ProjectView() {
     // TODO: Display 'language" info for each of the projects
     return (
         <>
-            <h4>Personal projects</h4>
+            <h4>Personal Projects</h4>
             
             {/*
             {error && <p className={styles.error}>{error}</p>}
